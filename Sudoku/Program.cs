@@ -46,9 +46,19 @@ namespace Sudoku
             
 
         }
-        static void ReadInput()
+        static int[,] readinput()
         {
-
+            string[] givenInput = Console.ReadLine().Split();
+            int[,] input = new int[9, 9];
+            int t = 0;
+            for (int x = 0; x < input.GetLength(0); x++)
+            {
+                for (int y = 0; y < input.GetLength(1); y++)
+                {
+                    input[x, y] = givenInput[t];
+                    t++;
+                }
+            }
+            return input;
         }
-    }
 }
