@@ -46,5 +46,9 @@ namespace Sudoku
             
 
         }
+        static void ReadInput()
+        {
+
+        }
     }
 }
