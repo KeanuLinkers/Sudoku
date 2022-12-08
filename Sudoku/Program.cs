@@ -27,38 +27,24 @@ namespace Sudoku
              * check of swap mogelijk is met die lokale max, anders verhoog je die lokale max
              * random walk met random uitgekozen blok
              */
-
-
-            string[] givenInput = Console.ReadLine().Split();
-            
-
-            int[,] inputStateBoard = new int[9,9]; //indexering is van 0,0 tm 8,8
-            
-            for (int x = 0; x < inputStateBoard.GetLength(0) ; x++)
-            {
-                for (int y = 0; y < inputStateBoard.GetLength(1); y++)
-                {
-                    //inputStateBoard[x, y] = givenInput[];
-                }
-            }
-
-
-            
-
+            int[,] inputStateBoard = readinput();
+           
         }
         static int[,] readinput()
         {
-            string[] givenInput = Console.ReadLine().Split();
+            string[] s = Console.ReadLine().Split();
+
             int[,] input = new int[9, 9];
             int t = 0;
             for (int x = 0; x < input.GetLength(0); x++)
             {
                 for (int y = 0; y < input.GetLength(1); y++)
                 {
-                    input[x, y] = givenInput[t];
+                    input[x, y] = int.Parse(s[t]);
                     t++;
                 }
             }
             return input;
         }
+    }
 }
