@@ -29,12 +29,26 @@ namespace Sudoku
              */
 
 
-            
-
-
-            
-
         }
+
+        void PossibleValues(int[,] startGrid)
+        {
+            List<Tuple<int,int>> variableCells = new List<Tuple<int, int>>();
+            List<List<int>> valuesCells = new List<List<int>>();
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (startGrid[i, j] == 0)
+                    {
+                        variableCells.Add(new Tuple<int, int>(i, j));
+                        valuesCells.Add(Enumerable.Range(1, 9).ToList());
+                    }
+                }
+            }
+        }
+
         static void ReadInput()
         {
             string[] values = Console.ReadLine().Split();
