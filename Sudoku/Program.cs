@@ -29,18 +29,7 @@ namespace Sudoku
              */
 
 
-            string[] givenInput = Console.ReadLine().Split();
             
-
-            int[,] inputStateBoard = new int[9,9]; //indexering is van 0,0 tm 8,8
-            
-            for (int x = 0; x < inputStateBoard.GetLength(0) ; x++)
-            {
-                for (int y = 0; y < inputStateBoard.GetLength(1); y++)
-                {
-                    //inputStateBoard[x, y] = givenInput[];
-                }
-            }
 
 
             
@@ -48,7 +37,19 @@ namespace Sudoku
         }
         static void ReadInput()
         {
+            string[] values = Console.ReadLine().Split();
 
+
+            int[,] grid = new int[9, 9]; //indexering is van 0,0 tm 8,8
+
+            for (int x = 0; x < 9; x++)
+            {
+                for (int y = 0; y < 9; y++)
+                {
+                    grid[x, y] = int.Parse(values[x * 9 + y]);
+                }
+
+            }
         }
     }
 }
