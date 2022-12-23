@@ -1,0 +1,29 @@
+[33mcommit 12945905b809b438264a1ec69f0a8a14dcb1c97a[m[33m ([m[1;36mHEAD -> [m[1;32mjialong[m[33m, [m[1;31morigin/jialong[m[33m)[m
+Author: Jialong Bao <jialong_bao@hotmail.com>
+Date:   Fri Dec 9 19:14:32 2022 +0100
+
+    Add PossibleValues and ReadInput methods
+
+[33mcommit a59ee28db0ec9cae72a9937964e8611d2c349e0c[m
+Author: Jialong Bao <jialong_bao@hotmail.com>
+Date:   Fri Dec 9 15:31:46 2022 +0100
+
+    input
+
+[33mcommit 60903f4f82c98223c5adfdbbedf01f20a7db5a74[m[33m ([m[1;31morigin/zoekalgoritme-keanu[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mzoekalgoritme-keanu[m[33m, [m[1;32mmain[m[33m)[m
+Author: Keanu Linkers <k.a.linkers@students.uu.nl>
+Date:   Wed Dec 7 16:44:53 2022 +0100
+
+    start readinput method
+
+[33mcommit 8bbb5e7479a7d3169c50f1a65a81621447891659[m
+Author: Keanu Linkers <k.a.linkers@students.uu.nl>
+Date:   Wed Dec 7 16:42:21 2022 +0100
+
+    Add project files.
+
+[33mcommit 10d8466507a7bf1b6f3569536fbc41ad3bf68948[m
+Author: Keanu Linkers <k.a.linkers@students.uu.nl>
+Date:   Wed Dec 7 16:42:18 2022 +0100
+
+    Add .gitignore and .gitattributes.
